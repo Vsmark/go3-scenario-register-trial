@@ -16,7 +16,7 @@ def view_scenario_register():
     try:
         df = pd.read_excel(xlsx_url, index_col=0)
         print("✅ Successfully loaded the scenario register!\n")
-        print(df.head(1))
+        print(df.head(10))
     except Exception as e:
         print("❌ Could not load the scenario register.")
         print("Error:", e)
