@@ -68,7 +68,6 @@ def analyze_and_display(json_path, scenario_name="My Scenario"):
     # Build a one-row dataframe
     result = {
         "Scenario": scenario_name,
-        "Folder": subfolder,
         "Duration (h)": duration,
         "Time Steps": time_steps,
         "Buses": len(buses),
