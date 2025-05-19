@@ -1,36 +1,31 @@
 go3-scenario-register-trial
-This repository is designed to help you understand the different scenarios in the ARPA 3 Grid Challenge. It contains two functions that you can easily use after importing the repository into your code editor.
+This repository helps you explore different scenarios in the ARPA 3 Grid Challenge. It provides two easy-to-use functions to load and analyze scenarios.
 
 Getting Started
-Follow these steps to set up the repository in your Google Colab or code editor:
-Importing Functions
-----------------------------------------------------------------------
-
+Clone the repository using the command:
 !git clone https://github.com/Vsmark/go3-scenario-register-trial.git
+
+Change directory to the scripts folder:
 %cd go3-scenario-register-trial/scripts
+
+Run view_scenario.py to see the available scenarios:
 !python view_scenario.py
 
-----------------------------------------------------------------------
-This function gets you the scenarios in your code editor.
-
-
-Another function is analyze and display,(helps you run any of the scenario you put in)
----------------------Import this--------------------------------------
-
+Analyze and Display a Scenario
+Clone the repository and go to the scripts folder (if you haven’t already):
 !git clone https://github.com/Vsmark/go3-scenario-register-trial.git
 %cd go3-scenario-register-trial/scripts
+
+Run the main analysis script:
 !python building_register_arpa_grid_optimization_challenge_3.py
 
----------------------How to use--------------------------------------
-
+In your Python code, import the function and use it like this:
 from building_register_arpa_grid_optimization_challenge_3 import analyze_and_display
 
-my_scenario = analyze_and_display(
-    "path of the scenario (JSON File) ",
-    " # Choose whatever name you want e.g. scenario112 # ")
-    
----------------------------------------------------------------------
+my_scenario = analyze_and_display("path/to/your/scenario.json", "scenario_name")
 
 Notes
-- Ensure that the path to your JSON file is correct.
-- You can choose any name for your scenario as per your preference.
+Make sure the path to your scenario JSON file is correct.
+
+You can choose any name for your scenario.
+
